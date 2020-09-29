@@ -2506,7 +2506,6 @@ def init_client(remote_addr=None, user_name=None, client_list=[],
     _CONF["remote_addr"] = remote_addr;
     _CONF["current_user"] = user_name
     _clients = set(sorted(client_list))
-    print(sorted(client_list))
     _clients.add(user_name)
     _CONF["client_list"] = list(_clients)
 
